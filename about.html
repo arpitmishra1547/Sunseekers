@@ -3,8 +3,11 @@
   <head>
     <title>About - SunSeekers Solar Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="darkMode.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="darkMode.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -20,7 +23,7 @@
     </script>
     <style>
       .brand-name {
-        background: linear-gradient(90deg, #ffffff, #FFE5B4);
+        background: linear-gradient(90deg, #ffffff, #ffe5b4);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -29,21 +32,46 @@
       }
     </style>
   </head>
-  <body class="font-sans text-center bg-gradient-to-br from-[#1e3c72] via-[#2a5298] to-[#1e3c72] min-h-screen m-0 p-5 text-white pt-20">
+  <body
+    class="font-sans text-center bg-gradient-to-br from-[#1e3c72] via-[#2a5298] to-[#1e3c72] min-h-screen m-0 p-5 text-white pt-20"
+  >
     <!-- Navigation Bar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md p-4">
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md p-4"
+    >
       <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="delete.html" class="flex items-center gap-2.5 no-underline">
-          <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center relative overflow-hidden">
-            <div class="absolute w-full h-full bg-radial-gradient from-white/80 to-transparent"></div>
+        <a href="solar.html" class="flex items-center gap-2.5 no-underline">
+          <div
+            class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center relative overflow-hidden"
+          >
+            <div
+              class="absolute w-full h-full bg-radial-gradient from-white/80 to-transparent"
+            ></div>
           </div>
-          <span class="brand-name text-2xl font-bold uppercase tracking-wider">SunSeekers</span>
+          <span class="brand-name text-2xl font-bold uppercase tracking-wider"
+            >SunSeekers</span
+          >
         </a>
         <div class="flex gap-5 items-center">
-          <a href="delete.html" class="text-white no-underline text-lg font-bold hover:text-primary transition-colors">Home</a>
-          <a href="about.html" class="text-primary no-underline text-lg font-bold hover:text-primary transition-colors">About</a>
-          <a href="contact.html" class="text-white no-underline text-lg font-bold hover:text-primary transition-colors">Contact</a>
-          <button class="dark-mode-toggle flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors" onclick="toggleDarkMode()">
+          <a
+            href="solar.html"
+            class="text-white no-underline text-lg font-bold hover:text-primary transition-colors"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-primary no-underline text-lg font-bold hover:text-primary transition-colors"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="text-white no-underline text-lg font-bold hover:text-primary transition-colors"
+            >Contact</a
+          >
+          <button
+            class="dark-mode-toggle flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors"
+            onclick="toggleDarkMode()"
+          >
             <i class="fas fa-moon"></i>
             <span>Dark Mode</span>
           </button>
@@ -52,15 +80,21 @@
     </nav>
 
     <div class="max-w-7xl mx-auto p-5">
-      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10">
+      <div
+        class="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10"
+      >
         <h1 class="text-4xl font-bold mb-8 text-white">About SunSeekers</h1>
-        
+
         <!-- Project Overview -->
         <div class="mb-12">
-          <h2 class="text-2xl font-semibold mb-4 text-primary">Project Overview</h2>
+          <h2 class="text-2xl font-semibold mb-4 text-primary">
+            Project Overview
+          </h2>
           <p class="text-white/80 leading-relaxed mb-4">
-            SunSeekers is an advanced dual-axis solar tracking system designed to maximize solar energy collection efficiency. 
-            Our system uses cutting-edge technology to automatically adjust solar panels to follow the sun's movement throughout the day.
+            SunSeekers is an advanced dual-axis solar tracking system designed
+            to maximize solar energy collection efficiency. Our system uses
+            cutting-edge technology to automatically adjust solar panels to
+            follow the sun's movement throughout the day.
           </p>
         </div>
 
@@ -68,29 +102,47 @@
         <div class="mb-12">
           <h2 class="text-2xl font-semibold mb-4 text-primary">Key Features</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10">
+            <div
+              class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10"
+            >
               <i class="fas fa-sun text-3xl text-primary mb-4"></i>
               <h3 class="text-xl font-semibold mb-2">Dual-Axis Tracking</h3>
-              <p class="text-white/80">Precise movement in both horizontal and vertical axes for optimal sun alignment</p>
+              <p class="text-white/80">
+                Precise movement in both horizontal and vertical axes for
+                optimal sun alignment
+              </p>
             </div>
-            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10">
+            <div
+              class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10"
+            >
               <i class="fas fa-microchip text-3xl text-primary mb-4"></i>
               <h3 class="text-xl font-semibold mb-2">Smart Sensors</h3>
-              <p class="text-white/80">Advanced LDR sensors for accurate light detection and positioning</p>
+              <p class="text-white/80">
+                Advanced LDR sensors for accurate light detection and
+                positioning
+              </p>
             </div>
-            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10">
+            <div
+              class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10"
+            >
               <i class="fas fa-chart-line text-3xl text-primary mb-4"></i>
               <h3 class="text-xl font-semibold mb-2">Real-time Monitoring</h3>
-              <p class="text-white/80">Live tracking and visualization of system performance</p>
+              <p class="text-white/80">
+                Live tracking and visualization of system performance
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Technology Stack -->
         <div class="mb-12">
-          <h2 class="text-2xl font-semibold mb-4 text-primary">Technology Stack</h2>
+          <h2 class="text-2xl font-semibold mb-4 text-primary">
+            Technology Stack
+          </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10">
+            <div
+              class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10"
+            >
               <h3 class="text-xl font-semibold mb-4">Hardware</h3>
               <ul class="text-white/80 space-y-2">
                 <li class="flex items-center gap-2">
@@ -111,7 +163,9 @@
                 </li>
               </ul>
             </div>
-            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10">
+            <div
+              class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10"
+            >
               <h3 class="text-xl font-semibold mb-4">Software</h3>
               <ul class="text-white/80 space-y-2">
                 <li class="flex items-center gap-2">
@@ -139,20 +193,52 @@
         <div class="mb-12">
           <h2 class="text-2xl font-semibold mb-4 text-primary">Our Team</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10">
-              <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-secondary"></div>
+            <div
+              class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10"
+            >
+              <div
+                class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-secondary"
+              >
+                <img
+                  src="ayan.jpg"
+                  alt="Ayan Bhargava"
+                  class="w-full h-full object-cover rounded-full"
+                />
+              </div>
               <h3 class="text-xl font-semibold mb-2">Ayan Bhargava</h3>
-              <p class="text-white/80">Project Lead</p>
+              <p class="text-white/80">Lead Developer & Hardware Integration</p>
             </div>
-            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10">
-              <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-secondary"></div>
-              <h3 class="text-xl font-semibold mb-2">IoT Department</h3>
-              <p class="text-white/80">Development Team</p>
+            <div
+              class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10"
+            >
+              <div
+                class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-secondary"
+              >
+                <img
+                  src="mnc1.jpg"
+                  alt="Mansi Lohani"
+                  class="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Mansi Lohani</h3>
+              <p class="text-white/80">Circuit Design & Testing Engineer</p>
             </div>
-            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10">
-              <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-secondary"></div>
-              <h3 class="text-xl font-semibold mb-2">LNCT College</h3>
-              <p class="text-white/80">Institution</p>
+            <div
+              class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10"
+            >
+              <div
+                class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-secondary"
+              >
+                <img
+                  src="arpit.jpg"
+                  alt="Arpit Mishra"
+                  class="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Arpit Mishra</h3>
+              <p class="text-white/80">
+                Web Interface Developer & Network Integration
+              </p>
             </div>
           </div>
         </div>
@@ -161,36 +247,87 @@
 
     <!-- Footer -->
     <footer class="bg-black/20 backdrop-blur-md py-8 mt-12 text-white">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-5">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-5"
+      >
         <div class="text-left">
           <h3 class="text-primary mb-4 text-lg font-bold">About SunSeekers</h3>
-          <p class="text-white/80">Advanced dual-axis solar tracking system designed to maximize solar energy collection.</p>
+          <p class="text-white/80">
+            Advanced dual-axis solar tracking system designed to maximize solar
+            energy collection.
+          </p>
         </div>
-        
+
         <div class="text-left">
           <h3 class="text-primary mb-4 text-lg font-bold">Quick Links</h3>
-          <p><a href="delete.html" class="text-white no-underline hover:text-primary transition-colors">Home</a></p>
-          <p><a href="about.html" class="text-white no-underline hover:text-primary transition-colors">About</a></p>
-          <p><a href="contact.html" class="text-white no-underline hover:text-primary transition-colors">Contact</a></p>
+          <p>
+            <a
+              href="solar.html"
+              class="text-white no-underline hover:text-primary transition-colors"
+              >Home</a
+            >
+          </p>
+          <p>
+            <a
+              href="about.html"
+              class="text-white no-underline hover:text-primary transition-colors"
+              >About</a
+            >
+          </p>
+          <p>
+            <a
+              href="contact.html"
+              class="text-white no-underline hover:text-primary transition-colors"
+              >Contact</a
+            >
+          </p>
         </div>
 
         <div class="text-left">
           <h3 class="text-primary mb-4 text-lg font-bold">Connect With Us</h3>
           <div class="grid grid-cols-2 gap-2.5 mt-2.5">
-            <a href="#" class="text-white no-underline p-2 rounded bg-white/10 hover:bg-white/20 transition-all flex items-center gap-2 justify-center hover:-translate-y-0.5">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 brightness-0 invert">
+            <a
+              href="#"
+              class="text-white no-underline p-2 rounded bg-white/10 hover:bg-white/20 transition-all flex items-center gap-2 justify-center hover:-translate-y-0.5"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg"
+                alt="LinkedIn"
+                class="w-5 h-5 brightness-0 invert"
+              />
               LinkedIn
             </a>
-            <a href="#" class="text-white no-underline p-2 rounded bg-white/10 hover:bg-white/20 transition-all flex items-center gap-2 justify-center hover:-translate-y-0.5">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub" class="w-5 h-5 brightness-0 invert">
+            <a
+              href="#"
+              class="text-white no-underline p-2 rounded bg-white/10 hover:bg-white/20 transition-all flex items-center gap-2 justify-center hover:-translate-y-0.5"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg"
+                alt="GitHub"
+                class="w-5 h-5 brightness-0 invert"
+              />
               GitHub
             </a>
-            <a href="#" class="text-white no-underline p-2 rounded bg-white/10 hover:bg-white/20 transition-all flex items-center gap-2 justify-center hover:-translate-y-0.5">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/twitter.svg" alt="Twitter" class="w-5 h-5 brightness-0 invert">
+            <a
+              href="#"
+              class="text-white no-underline p-2 rounded bg-white/10 hover:bg-white/20 transition-all flex items-center gap-2 justify-center hover:-translate-y-0.5"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/twitter.svg"
+                alt="Twitter"
+                class="w-5 h-5 brightness-0 invert"
+              />
               Twitter
             </a>
-            <a href="#" class="text-white no-underline p-2 rounded bg-white/10 hover:bg-white/20 transition-all flex items-center gap-2 justify-center hover:-translate-y-0.5">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram" class="w-5 h-5 brightness-0 invert">
+            <a
+              href="#"
+              class="text-white no-underline p-2 rounded bg-white/10 hover:bg-white/20 transition-all flex items-center gap-2 justify-center hover:-translate-y-0.5"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg"
+                alt="Instagram"
+                class="w-5 h-5 brightness-0 invert"
+              />
               Instagram
             </a>
           </div>
@@ -205,15 +342,18 @@
       </div>
 
       <div class="text-center pt-5 mt-5 border-t border-white/10 text-white/60">
-        <p>&copy; 2024 SunSeekers. All rights reserved. | Developed by IoT Department, LNCT College</p>
+        <p>
+          &copy; 2024 SunSeekers. All rights reserved. | Developed by IoT
+          Department, LNCT College
+        </p>
       </div>
     </footer>
 
     <script src="darkMode.js"></script>
     <script>
       function openImage(src) {
-        window.open(src, '_blank');
+        window.open(src, '_blank')
       }
     </script>
   </body>
-</html> 
+</html>
