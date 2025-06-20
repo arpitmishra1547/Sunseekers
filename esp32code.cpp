@@ -2,12 +2,10 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-// WiFi credentials
 const char* ssid = "Arpit";
 const char* password = "12345678";
 
-// IMPORTANT: Replace with your Vercel app's URL
-const char* serverName = "https://YOUR_PROJECT_NAME.vercel.app/api/sensor-data";
+const char* serverName = "https://sunseekers-9y97.vercel.app/api/sensor-data";
 
 // Define Servo objects
 Servo servoX;  // Horizontal servo
@@ -94,7 +92,6 @@ void loop() {
       // Specify content-type header
       http.addHeader("Content-Type", "application/json");
 
-      // Prepare JSON payload
       String httpRequestData = "{\"TL\":" + String(tl) +
                                ",\"TR\":" + String(tr) +
                                ",\"BL\":" + String(bl) +
@@ -105,11 +102,23 @@ void loop() {
       // Send HTTP POST request
       int httpResponseCode = http.POST(httpRequestData);
 
-      Serial.print("HTTP Response code: ");
-      Serial.println(httpResponseCode);
+      Serial.print("Sending data to server... ");
+
+      if (httpResponseCode > 0) {
+        Serial.print("HTTP Response code: ");
+        Serial.println(httpResponseCode);
+        String payload = http.getString();
+        Serial.println(payload);
+      } else {
+        Serial.print("Error code: ");
+        Serial.println(httpResponseCode);
+        Serial.printf("HTTP POST failed, error: %s\n", http.errorToString(httpResponseCode).c_str());
+      }
 
       // Free resources
       http.end();
+    } else {
+      Serial.println("WiFi Disconnected");
     }
     lastTime = millis();
   }
