@@ -10,10 +10,10 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname))); // Serve static files from current directory
 
 // MongoDB Connection - Use environment variable for production
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/solar_tracker";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://arpitmishra1547:Arpit%40123@sunseekers.u6dfbol.mongodb.net/SunSeekersDB?retryWrites=true&w=majority&appName=SunSeekers";
 
 // Only connect to MongoDB if URI is provided
-if (MONGODB_URI && MONGODB_URI !== "mongodb://localhost:27017/solar_tracker") {
+if (MONGODB_URI && MONGODB_URI !== "mongodb+srv://arpitmishra1547:Arpit%40123@sunseekers.u6dfbol.mongodb.net/SunSeekersDB?retryWrites=true&w=majority&appName=SunSeekers") {
   mongoose.connect(MONGODB_URI)
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('MongoDB connection error:', err));
